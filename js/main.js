@@ -123,7 +123,7 @@ node.insertAdjacentHTML('afterEnd', getbutts);
 node = document.getElementById('container');
 
 function switchFanImg(zoom) {
-  var cube = document.getElementById('crcube');lli
+  var cube = document.getElementById('crcube');
   if (zoom) {
     cube.src = './assets/CR-Cube-Close.gif';
   } else {
