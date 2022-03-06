@@ -122,8 +122,17 @@ node.insertAdjacentHTML('afterEnd', getbutts);
 
 node = document.getElementById('container');
 
+function switchFanImg(zoom) {
+  var cube = document.getElementById('crcube');
+  if (zoom) {
+    cube.src = './assets/CR-Cube-Close.gif';
+  } else {
+    cube.src = './assets/CR-Cube.gif';
+  }
+}
 
-let o = "<div id='ccontain'><div id='filtertxt'><p>Corsi-Rosenthal Boxes</p></div><a  href='https://www.secondnature.com/blog/what-merv-rating-should-i-use'><img id='crcube' onmouseover='filterTxt(true);' onmouseout='calculate(r.meters);filterTxt(false);'></a></div>";
+
+let o = "<div id='ccontain'><div id='filtertxt'><p>Corsi-Rosenthal Boxes</p></div><a  href='https://www.secondnature.com/blog/what-merv-rating-should-i-use'><img id='crcube' src='./assets/CR-Cube.gif' onmouseover='switchFanImg(true);filterTxt(true);' onmouseout='switchFanImg(false);calculate(r.meters);filterTxt(false);'></a></div>";
 node.insertAdjacentHTML('afterbegin', o);
 
 node = document.getElementById('ccontain');
