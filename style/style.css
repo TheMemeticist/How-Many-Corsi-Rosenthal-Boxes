@@ -1,0 +1,198 @@
+/*
+
+Colour Pallete: #bce784ff #5dd39eff #348aa7ff #525174ff #513b56ff
+https://coolors.co/palette/bce784-5dd39e-348aa7-525174-513b56
+
+*/
+a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 200%;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #348aa7ff;
+  text-align: center;
+}
+#container {
+  height: auto;
+  min-width: 450px;
+  max-width: 20%;
+  margin: auto auto;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#sqrFootIn {
+  font-size: 100%;
+  text-align: center;
+  width: 33%;
+  height: auto;
+  margin-bottom: 0%;
+  margin-right: -26.5%;
+}
+input {
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 180px;
+  width: 250px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus {
+    outline-width: 0;
+}
+p {
+
+}
+#ccontain {
+  width: 100%;
+  margin-bottom: 0%;
+  margin-top: 16%;
+}
+#outtxt {
+  margin-bottom: 16%;
+  font-size: 50%;
+  border: solid 1px;
+  border-radius: 8px;
+  border-color: #5dd39eff;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+#mtxt {
+  margin:3%;
+}
+#CRButts {
+  margin-top: 16%;
+  width: 100%;
+  height: 40px;
+}
+#buy {
+  border: solid 1px;
+  border-color: #bce784ff;
+  float: left;
+  width: 49%;
+  border-radius:  120px 0 0 120px  ;
+}
+#buy:hover {
+  background-color: #5dd39eff;
+}
+#build {
+  border: solid 1px;
+  border-radius: 0 120px 120px 0 ;
+  float: left;
+  width: 49%;
+  border-color: #bce784ff;
+}
+#build:hover {
+  background-color: #5dd39eff;
+}
+#filtertxt {
+  text-align: center;
+  font-size: 120%;
+  height:100%;
+  width:100%;
+  color: white;
+}
+#crcube{
+  margin-right: -12%;
+  margin-left: -12%;
+  width: 50%;
+  margin-bottom: 5%;
+  content:url(/assets/CR-Cube.gif);
+}
+#crcube:hover{
+  border: solid 2px;
+  border-radius: 360px;
+  border-color: white;
+  margin-right: -12%;
+  margin-bottom: 4.1%;
+  content:url(/assets/CR-Cube-Close.gif);
+}
+#nCRB {
+  margin-top: 18%;
+  margin-right: 16%;
+  color:white;
+  font-size: 250%;
+  float: right;
+  width: 50%;
+}
+#nboxes {
+  width: 33%;
+  float:right;
+  margin: 0;
+}
+#inputcontain {
+  width: 100%;
+  height: 100%;
+  border: solid 1px;
+  border-radius: 360px;
+  border-color: #bce784ff;
+}
+#ruler {
+  float: right;
+  margin-left: 1%;
+  margin-right: 12%;
+  font-size: 160%;
+  width: 16%;
+  height: 60px;
+  background-color: #525174;
+  border-radius: 360px;
+  color: white;
+}
+#rulerM {
+  float: right;
+  margin-left: 1%;
+  margin-right: 12%;
+  font-size: 140%;
+  width: 16%;
+  height: 60px;
+  background-color: #525174;
+  border-radius: 360px;
+  color: white;
+}
+#rulerM:hover {
+  background-color: #5dd39eff;
+}
+#ruler:hover {
+  background-color: #5dd39eff;
+}
+#add {
+  font-size: 170%;
+  background-color: #BCE784;
+  height: 60px;
+  width: 19%;
+  margin-top: 5%;
+  margin-left: 40%;
+  border-radius: 360px;
+
+}
+#sub {
+  font-size: 150%;
+  background-color: #ff6347;
+  height: 60px;
+  width: 19%;
+  margin-bottom: 5%;
+  margin-left: 40%;
+  border-radius: 360px;
+}
+#sub:hover {
+  background-color: #5dd39eff;
+}
+#add:hover {
+  background-color: #5dd39eff;
+}
