@@ -2,7 +2,7 @@
 function calculate(isMeters) {
   let standard = 550.0                 // standard room size in square feet-
   if (isMeters) {
-    var m = 1.0 / (standard * 0.3048); // CR Box per square meter
+    var m = 1.0 / (standard * 0.092903); // CR Box per square meter
   } else {
     var m = 1.0 / standard;            // CR Box per square foot
   }
@@ -49,13 +49,13 @@ class Ruler {
   toggle() {
     let inp = document.getElementById('sqrFootIn').value;
     if (this.meters) {
-      inp = Math.round(inp * 3.28084);
+      inp = Math.round(inp * 10.7639);
       this.meters = false;
       var i = 'ft²';
       document.getElementById("rulerM").setAttribute("id", "ruler");
       document.getElementById('ruler').innerHTML = i;
     } else {
-      inp = Math.round(inp * 0.3048);
+      inp = Math.round(inp * 0.092903);
       this.meters = true;
       document.getElementById("ruler").setAttribute("id", "rulerM");
       var i = '㎡';
@@ -123,7 +123,7 @@ node.insertAdjacentHTML('afterEnd', getbutts);
 node = document.getElementById('container');
 
 function switchFanImg(zoom) {
-  var cube = document.getElementById('crcube');
+  var cube = document.getElementById('crcube');lli
   if (zoom) {
     cube.src = './assets/CR-Cube-Close.gif';
   } else {
