@@ -1,0 +1,23 @@
+
+#linkcontainer {
+  width: 64px;
+  height: 64px;
+  float: left;
+  font-size: 50%;
+  margin-left: 12px;
+  margin-top: 0px;
+}
+
+.linkbutt {
+  height: 200px;
+  width: 200px;
+}
+#linkimg {
+  border: solid 2px;
+  border-radius:400px;
+  border-color: white;
+}
+#lctxt {
+  text-align: center;
+  color:white;
+}
