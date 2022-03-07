@@ -70,7 +70,7 @@ function filterTxt(on) {
   if (on) {
     document.getElementById('filtertxt').innerHTML = '<p>MERV Filters</p>';
     let b = document.getElementById('nboxes').innerHTML;
-    b = (b * 5).toString();
+    b = (b * 4).toString();
     document.getElementById('nboxes').innerHTML =  b;
   } else {
     document.getElementById('filtertxt').innerHTML = '<p>Corsi-Rosenthal Boxes</p>';
@@ -115,7 +115,7 @@ node = document.getElementById('inputcontain');
 node.insertAdjacentHTML("afterBegin", badd);
 node.insertAdjacentHTML("beforeEnd", bsub);
 
-let getbutts = "<div id='CRButts'> <a href='https://cleanarair.com/'> <div id='buy'>Order 🛒</div></a> <a href='https://cleanaircrew.org/box-fan-filters/'> <div id='build'>Build 🛠️</div></a> </div>";
+let getbutts = "<div id='CRButts'> <a href='https://docs.google.com/presentation/d/150_1ImNcnlaKI3DElDcHfO7sVkSW_4_Anm76O9BHw0E/edit#slide=id.gea8063763b_0_8'> <div id='buy'>Order 🛒</div></a> <a href='https://cleanaircrew.org/box-fan-filters/'> <div id='build'>Build 🛠️</div></a> </div>";
 node.insertAdjacentHTML('afterEnd', getbutts);
 
 
