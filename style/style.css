@@ -4,6 +4,13 @@ Colour Pallete: #bce784ff #5dd39eff #348aa7ff #525174ff #513b56ff
 https://coolors.co/palette/bce784-5dd39e-348aa7-525174-513b56
 
 */
+html {
+  background: rgb(0,163,196);
+  background: -moz-radial-gradient(circle, rgba(0,163,196,1) 0%, rgba(5,0,82,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(0,163,196,1) 0%, rgba(5,0,82,1) 100%);
+  background: radial-gradient(circle, rgba(0,163,196,1) 0%, rgba(5,0,82,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00a3c4",endColorstr="#050052",GradientType=1);
+}
 a, a:hover, a:focus, a:active {
       text-decoration: none;
       color: inherit;
@@ -14,12 +21,12 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  background-color: #348aa7ff;
   text-align: center;
+  font
 }
 #container {
   height: auto;
-  min-width: 450px;
+  min-width: 500px;
   max-width: 20%;
   margin: auto auto;
   -webkit-user-select: none;
@@ -56,7 +63,50 @@ input:focus {
     outline-width: 0;
 }
 p {
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+#backbutt {
+  margin: 2%;
+  width: 70px;
+  height: 35px;
+  border-radius: 250px;
+  background-color: #bce784ff;
+  float: left;
+}
+#backbutt:hover {
+  background-color: #5dd39eff;
+}
+#limg {
+  max-width: 100%;
+  max-height: 100%;
+  border: solid 2px;
+  border-radius: 12px;
+  border-color: #bce784ff;
+  box-shadow: 5px 2px 28px 12px rgba(0, 0, 0, 0.2);
+}
+#limg:hover {
+  border-color: #5dd39eff;
+}
 
+#linkscont {
+  width: 80%;
+  height: 100%;
+}
+.lcontainer {
+  margin: 6px;
+  padding: 6px;
+  padding-bottom: 120px;
+  opacity: 90%;
+  height: 200px;
+  width: 200px;
+  float: left;
+  position:static;
+}
+.lcontainer:hover {
+  opacity: 100%;
 }
 #ccontain {
   width: 100%;
@@ -77,6 +127,7 @@ p {
   margin:3%;
 }
 #CRButts {
+  color: white;
   margin-top: 16%;
   width: 100%;
   height: 40px;
@@ -86,6 +137,7 @@ p {
   border-color: #bce784ff;
   float: left;
   width: 49%;
+  height: 100%;
   border-radius:  120px 0 0 120px  ;
 }
 #buy:hover {
@@ -96,6 +148,7 @@ p {
   border-radius: 0 120px 120px 0 ;
   float: left;
   width: 49%;
+  height: 100%;
   border-color: #bce784ff;
 }
 #build:hover {
