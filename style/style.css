@@ -79,9 +79,13 @@ p {
 #backbutt:hover {
   background-color: #5dd39eff;
 }
+#linksicon {
+  margin: 5%;
+  transform: scale(5);
+}
 #limg {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 75%;
+  max-height: 75%;
   border: solid 2px;
   border-radius: 12px;
   border-color: #bce784ff;
@@ -92,21 +96,28 @@ p {
 }
 
 #linkscont {
-  width: 80%;
-  height: 100%;
+  margin-top: 1%;
+  width: 90%;
+  height: 90%;
 }
 .lcontainer {
-  margin: 6px;
-  padding: 6px;
-  padding-bottom: 120px;
+  margin: 0%;
+  padding: 1%;
   opacity: 90%;
   height: 200px;
   width: 200px;
+  font-size: 70%;
   float: left;
-  position:static;
+  position: relative;
 }
 .lcontainer:hover {
   opacity: 100%;
+}
+#playbutton {
+  margin-left: -2%;
+  padding: 1%;
+  transform: scale(2);
+  position: absolute;
 }
 #ccontain {
   width: 100%;
@@ -160,6 +171,10 @@ p {
   height:100%;
   width:100%;
   color: white;
+}
+#filtertxt:hover {
+  background-color: #5DD39E;
+  border-radius: 60px;
 }
 #crcube{
   margin-right: -12%;
