@@ -14,7 +14,6 @@ function calculate(isMeters) {
   node = document.getElementById('container');
   document.getElementById('nboxes').innerHTML = n.toString();
   updateTxt(isMeters);
-
 }
 
 class Calculator {
@@ -40,7 +39,6 @@ class Calculator {
     this.valCheck(val);
   }
 }
-
 
 class Ruler {
   constructor() {
@@ -73,9 +71,8 @@ function filterTxt(on) {
     b = (b * 4).toString() + '+';
     document.getElementById('nboxes').innerHTML =  b;
   } else {
-    document.getElementById('filtertxt').innerHTML = '<p>Corsi-Rosenthal Boxes</p>';
+    document.getElementById('filtertxt').innerHTML = "<p>Corsi-Rosenthal Boxes <span class='material-icons md-light'>info</span></p>";
   }
-
 }
 function updateTxt(meters) {
   let txt = 'For an  indoor area of [measure] you will need an estimated [nboxes] Corsi-Rosenthal Boxes assuming an 8ft ceiling.';
@@ -96,18 +93,14 @@ function updateTxt(meters) {
 
 let c = new Calculator();
 
-
 let r = new Ruler();
 node = document.getElementById('container');
-
 
 let inp = "<div id='inputcontain'><input id='sqrFootIn' type='number' onChange='calculate(r.meters);' ></div>";
 
 node.insertAdjacentHTML('beforeend', inp);
 
-
 document.getElementById('sqrFootIn').value = '500';
-
 
 let badd = "<div id='add' onClick='c.a();calculate(r.meters);'>+</div>";
 let bsub = "<div id='sub' onClick='c.s();calculate(r.meters);'>-</div>";
@@ -117,8 +110,6 @@ node.insertAdjacentHTML("beforeEnd", bsub);
 
 let getbuttons = "<div id='CRButts'> <a href='order.html'> <div id='buy'>Order <span class='material-icons md-light'>shopping_cart</span></div></a><a href='build.html'> <div id='build'>Build ️<span class='material-icons md-light'>build</span></div></a> </div>";
 node.insertAdjacentHTML('afterEnd', getbuttons);
-
-
 
 node = document.getElementById('container');
 
@@ -132,7 +123,7 @@ function switchFanImg(zoom) {
 }
 
 
-let o = "<div id='ccontain'><div id='filtertxt'><p>Corsi-Rosenthal Boxes</p></div><a  href='https://www.secondnature.com/blog/what-merv-rating-should-i-use'><img id='crcube' src='./assets/CR-Cube.gif' onmouseover='switchFanImg(true);filterTxt(true);' onmouseout='switchFanImg(false);calculate(r.meters);filterTxt(false);'></a></div>";
+let o = "<div id='ccontain'><a href='https://www.tandfonline.com/doi/full/10.1080/02786826.2022.2054674'><div id='filtertxt'><p>Corsi-Rosenthal Boxes <span class='material-icons md-light'>info</span></p></div></a><a  href='https://www.secondnature.com/blog/what-merv-rating-should-i-use'><img id='crcube' src='./assets/CR-Cube.gif' onmouseover='switchFanImg(true);filterTxt(true);' onmouseout='switchFanImg(false);calculate(r.meters);filterTxt(false);'></a></div>";
 node.insertAdjacentHTML('afterbegin', o);
 
 node = document.getElementById('ccontain');
@@ -141,10 +132,6 @@ node.insertAdjacentHTML('beforeend', out);
 
 let buy = "<div></div>";
 node.insertAdjacentHTML('afterEnd', buy);
-
-
-
-
 
 let ftb = "<div id='ruler' onClick='r.toggle();'>ft²</div>";
 node = document.getElementById('sqrFootIn');
