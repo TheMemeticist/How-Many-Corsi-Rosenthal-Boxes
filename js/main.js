@@ -75,7 +75,7 @@ function filterTxt(on) {
   }
 }
 function updateTxt(meters) {
-  let txt = 'For an  indoor area of [measure] you will need an estimated [nboxes] Corsi-Rosenthal Boxes assuming an 8ft ceiling.';
+  let txt = 'For an  indoor area of [measure] you will need an estimated [nboxes] Corsi-Rosenthal Boxes assuming an 8ft ceiling. *Consult your local HVAC specialists. This software is not yet certified.';
 
 
   let n = document.getElementById('nboxes').innerHTML;
