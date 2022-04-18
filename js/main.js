@@ -17,8 +17,20 @@ function calculate(isMeters) {
 }
 
 class Calculator {
+  // Corsi-Rosenthal Box Calculator based on "Characterizing the performance of a do-it-yourself (DIY) box fan air filter".
+  // https://www.tandfonline.com/doi/full/10.1080/02786826.2022.2054674
+
   constructor() {
-    this.foo = '';
+    //  The CADR determines the number of equivalent air changes per hour (ACH) achievable in a room of a given size.
+
+    // At the lowest speed the clean air delivery rate for our Corsi-Rosenthal Box is >600 ft3 min−1 (1,019 m3 h−1) for a median particle diameter of 1.2 microns, demonstrating exceptional performance relative to most commercially available filter-based air cleaners.
+
+    // AHAM recommends that the CADR of an air filter is about two-thirds of the room floor area, corresponding to a CADR of 666 ft3 min−1 for a 1000 ft2 classroom.
+
+    // The CR Box is cost efficient, with a cost-normalized CADR of <$0.072/(ft3 min−1).
+
+    this.CADR = 600; // ft3 min−1 on low speed.
+    // this.CADR = 850; // ft3 min−1 on high speed.
     this.element = document.getElementById('sqrFootIn');
   }
   valCheck(v) {
@@ -27,12 +39,10 @@ class Calculator {
     } else {
       document.getElementById('sqrFootIn').value = v;
     }
-
   }
   a() {
     var val = parseInt(document.getElementById('sqrFootIn').value) + 500;
     this.valCheck(val);
-
   }
   s() {
     let val = parseInt(document.getElementById('sqrFootIn').value) - 500;
@@ -75,24 +85,20 @@ function filterTxt(on) {
   }
 }
 function updateTxt(meters) {
-  let txt = 'For an  indoor area of [measure] you will need an estimated [nboxes] Corsi-Rosenthal Boxes assuming an 8ft ceiling. *Consult your local HVAC specialists. This software is not yet certified.';
-
+  let txt = "For an  indoor area of [measure] you will need an estimated [nboxes] Corsi-Rosenthal Boxes assuming an 8ft ceiling. <p id='fineprint'> *Consult your local HVAC specialists. This software is not yet certified.</p>";
 
   let n = document.getElementById('nboxes').innerHTML;
-
   let s = document.getElementById('sqrFootIn').value.toString();
   if (meters) {
     var m = s + ' ㎡';
   } else {
     var m = s + ' ft²';
   }
-
   result = txt.replace("[measure]", m);
   document.getElementById('mtxt').innerHTML = result.replace("[nboxes]", n);
 }
 
 let c = new Calculator();
-
 let r = new Ruler();
 node = document.getElementById('container');
 
