@@ -137,6 +137,10 @@ p {
 #mtxt {
   margin:3%;
 }
+#fineprint {
+  opacity: 80%;
+  font-size: 80%;
+}
 #CRButts {
   color: white;
   margin-top: 16%;
