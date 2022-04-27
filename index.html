@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -13,5 +13,18 @@
     <div id="container" onChange='updateTxt(r.meters);'>
     </div>
     <script src="./js/main.js"></script>
+    <!-- ... existing HTML ... -->
+
+    <div id="like_button_container"></div>
+    <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script src="like_button.js"></script>
+<!-- ... existing HTML ... -->
+    <script type="module" src="./vapourLab/js/example.js"></script>
+    <script type="module" src="./vapourLab/js/labTest.js"></script>
   </body>
 </html>
