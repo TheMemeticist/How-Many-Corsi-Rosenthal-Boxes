@@ -22,7 +22,7 @@ body {
   width: 100%;
   margin: 0;
   text-align: center;
-  font
+
 }
 #container {
   height: auto;
@@ -129,18 +129,35 @@ p {
   margin-top: 16%;
 }
 #outtxt {
-  margin-bottom: 16%;
-  font-size: 50%;
   border: solid 1px;
   border-radius: 8px;
   border-color: #5dd39eff;
   color: white;
-  height: 100%;
-  width: 100%;
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  font-size: 45%;
 }
-#mtxt {
-  margin:3%;
+#vape {
+  color:white;
+  border: solid 1px;
+  border-color: #5DD39E;
+  height: 538px;
 }
+#vape:hover {
+  background-color: #5DD39E;
+  cursor:  pointer;
+}
+img {
+  border-radius: 100px;
+}
+
+p {
+  padding: 20%;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
 #fineprint {
   opacity: 80%;
   font-size: 80%;
@@ -148,6 +165,7 @@ p {
 #CRButts {
   color: white;
   margin-top: 16%;
+  margin-bottom: 32%;
   width: 100%;
   height: 40px;
 }
