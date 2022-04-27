@@ -9,7 +9,7 @@ node = document.getElementById('container');
 
 
 
-let txt = "<p>This site has been upgraded to VapourWare.</p><a href='https://thememeticist.github.io/VapourWare/'><div id='vape'><img src='assets/VapourWare.jpg'></div></a><p>But you can still find links to build CR-Boxes for now. *Always consult your local HVAC specialists.</p>";
+let txt = "<p>This app has mutated into a new variant called VapourWare. Click the link below.</p><a href='https://thememeticist.github.io/VapourWare/'><div id='vape'><img src='assets/VapourWare.jpg'></div></a><p>But you can still find links to build CR-Boxes for now. *Always consult your local HVAC specialists.</p>";
 node.insertAdjacentHTML('beforeBegin', txt);
 
 updateTxt(r.meters);
